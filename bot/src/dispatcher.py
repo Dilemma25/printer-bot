@@ -2,15 +2,15 @@ from aiogram import Dispatcher
 from aiogram.client.default import DefaultBotProperties
 from aiogram import Bot
 from aiogram.enums import ParseMode
-from src.core.container.main_container import Container
-from src.presentation.handlers.router import router
-import src.presentation.handlers.start_handler as start_handler_module
+from src.handlers.router import router
+from src.config import Config
+from src.handlers import start_handler
+from src.handlers import document_handler
+from src.handlers import done_handler
 
-container = Container()
-container.wire(modules=[start_handler_module])
 
 bot = Bot(
-    token=container.config().BOT_TOKEN,
+    token=Config.BOT_TOKEN,
     default=DefaultBotProperties(parse_mode=ParseMode.HTML)
 )
 dp = Dispatcher()
