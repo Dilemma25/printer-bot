@@ -1,0 +1,11 @@
+services:
+
+  printer-bot:
+    container_name: printer-bot
+    build:
+      context: ./bot
+      target: prod
+    env_file:
+      - .env
+    restart: unless-stopped
+    command: ["python", "main.py"]
