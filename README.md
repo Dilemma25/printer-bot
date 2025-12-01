@@ -24,8 +24,7 @@ BOT_TOKEN=123456:ABC-DEF1234ghIkl-zyx57W2v1u123ew11
 # Ваш Telegram ID (куда бот будет пересылать фотографии для печати)
 ADMIN_ID=123456789
 ```
-Замените `BOT_TOKEN` на токен, полученный у [@BotFather](https://t.me/BotFather),  
-`ADMIN_ID` на свой Telegram ID.
+Замените `BOT_TOKEN` на токен, полученный у [@BotFather](https://t.me/BotFather), `ADMIN_ID` на свой Telegram ID.
 
 # Работа с приложением
 ## команды
